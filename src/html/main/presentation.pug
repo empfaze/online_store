@@ -1,0 +1,51 @@
+- var numberOfSlides = 4;
+
+section.presentation
+    .outer-wrapper
+        .presentation__content
+            .swiper.presentation-swiper
+                .swiper-wrapper
+                    .swiper-slide.presentation-swiper-slide
+                        h1.presentation__title Интернет-магазин сертифицированных златоустовских ножей
+                        p.presentation__text Добро пожаловать на&nbsp;официальный сайт &laquo;ЗЛАТМАКС&raquo;! В&nbsp;нашем магазине представлен наиболее широкий выбор Златоустовских ножей от&nbsp;Златоустовских Оружейных Фабрик и&nbsp;компаний, мы&nbsp;являемся официальными поставщиками.
+                        button.button.presentation__button Подробнее
+                    .swiper-slide.presentation-swiper-slide
+                        h2.presentation__title Интернет-магазин сертифицированных златоустовских ножей
+                        p.presentation__text Добро пожаловать на&nbsp;официальный сайт &laquo;ЗЛАТМАКС&raquo;! В&nbsp;нашем магазине представлен наиболее широкий выбор Златоустовских ножей от&nbsp;Златоустовских Оружейных Фабрик и&nbsp;компаний, мы&nbsp;являемся официальными поставщиками.
+                    .swiper-slide.presentation-swiper-slide
+                        h2.presentation__title Интернет-магазин сертифицированных златоустовских ножей
+                        p.presentation__text Добро пожаловать на&nbsp;официальный сайт &laquo;ЗЛАТМАКС&raquo;! В&nbsp;нашем магазине представлен наиболее широкий выбор Златоустовских ножей от&nbsp;Златоустовских Оружейных Фабрик и&nbsp;компаний, мы&nbsp;являемся официальными поставщиками.
+                    .swiper-slide.presentation-swiper-slide
+                        h2.presentation__title Интернет-магазин сертифицированных златоустовских ножей
+                        p.presentation__text Добро пожаловать на&nbsp;официальный сайт &laquo;ЗЛАТМАКС&raquo;! В&nbsp;нашем магазине представлен наиболее широкий выбор Златоустовских ножей от&nbsp;Златоустовских Оружейных Фабрик и&nbsp;компаний, мы&nbsp;являемся официальными поставщиками.
+                .presentation-swiper__info
+                    .swiper-pagination.presentation-swiper__bullet-list
+                    .presentation-swiper__count
+                        span.presentation-swiper__current-slide 1
+                        span.presentation-swiper__overall-slide / #{numberOfSlides}
+            .presentation__image-wrapper
+                picture
+                    source(srcset="@img/knife-top-mobile.webp", type="image/webp", media="(max-width: 500px)")
+                    source(srcset="@img/knife-top-mobile.png", type="image/png", media="(max-width: 500px)")
+                    source(srcset="@img/knife-top-desktop.webp", type="image/webp")
+                    img.presentation__image(src="@img/knife-top-desktop.png", alt="Златоустовские ножи в подставке")
+                .presentation__circle_big
+                    - for (let i = 0; i < 3; i++)
+                        .presentation__circle_small +
+        ul.presentation__advantages
+            li.advantage
+                svg.advantage__icon_first.icon
+                    use(xlink:href="@img/sprite/sprite.svg#icon01")
+                p.advantage__text Гарантия 100% возврата денежных средств
+            li.advantage
+                svg.advantage__icon_second.icon
+                    use(xlink:href="@img/sprite/sprite.svg#icon02")
+                p.advantage__text Доставка по России, Казахстану и Белоруссии
+            li.advantage
+                svg.advantage__icon_third.icon
+                    use(xlink:href="@img/sprite/sprite.svg#icon03")
+                p.advantage__text Возможность оформление заказа без регистрации.
+            li.advantage
+                svg.advantage__icon_fourth.icon
+                    use(xlink:href="@img/sprite/sprite.svg#icon04")
+                p.advantage__text Скидки постоянным покупателям.

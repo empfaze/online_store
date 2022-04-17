@@ -1,0 +1,45 @@
+.footer-third {
+  max-width: 192rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: $color_bg_footer;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    font-weight: 500;
+
+    @media (max-width: 50em) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__disclaimer {
+    max-width: 82rem;
+    width: 100%;
+
+    @media (max-width: 50em) {
+      text-align: center;
+    }
+  }
+
+  &__copy {
+    margin-left: 5rem;
+    white-space: nowrap;
+
+    @media (max-width: 50em) {
+      margin-left: 0;
+      margin-bottom: 2rem;
+      white-space: unset;
+
+      align-self: center;
+      text-align: center;
+    }
+  }
+}

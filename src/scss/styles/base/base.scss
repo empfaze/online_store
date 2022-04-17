@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $color_text;
+}
+
+*:focus {
+  outline: 2px solid #5252ef;
+  outline-offset: 3px;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color_bg;
+  font-family: $font_main;
+  width: 100%;
+  position: relative;
+}
+
+body.mobile *:focus {
+  outline: none;
+}
+
+body.lock {
+  overflow-y: scroll;
+  width: 100%;
+  position: fixed;
+  left: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $color_text;
+  text-decoration: none;
+}
+
+.outer-wrapper {
+  width: 100%;
+  max-width: 159rem;
+  margin: 0 auto;
+}
